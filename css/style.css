@@ -7,7 +7,13 @@ body {
     line-height: 1.8;
     color: #999
 }
-
+.plus-icon {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Épaisseur du texte */
+    color: #000; /* Couleur du texte */
+    margin-left: 5px; /* Marge à gauche pour l'espace */
+    /* Vous pouvez également ajouter d'autres styles selon vos préférences */
+}
 .no-padding {
     padding-left: 0;
     padding-right: 0;
