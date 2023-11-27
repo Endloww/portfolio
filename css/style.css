@@ -240,6 +240,7 @@ h5 {
     color: #000;
     text-shadow: 3px 2px 2px rgba(0,0,0,0.5);
     transition: transform 0.3s ease;
+    font-size: 20px;
 }
 .box-primary-nav-trigger .black:hover {
     transform: scale(1.3); /* Zoom au survol à 120% de la taille d'origine */
@@ -325,6 +326,7 @@ h5 {
 
 .box-primary-nav-trigger .box-menu-text {
     display: inline-block;
+    margin-left: -30%;
 }
 
 .box-primary-nav-trigger .box-menu-icon {
@@ -938,12 +940,14 @@ footer img {
     margin-bottom: 5%;
     /* Ajoutez d'autres styles selon vos besoins, comme la marge, le padding, etc. */
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
-    transition: transform 0.3s ease;
+    transition: transform 1s ease-in-out; /* Ajout de transition pour la propriété content */
+    transform-style: preserve-3d; /* Utilisation de l'effet 3D */
 }
-.tete:hover {
-    transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
+.tete:hover{
+    transform: scale(1.1) rotateY(180deg);
   }
-    
+
+
 
 .bar-mg {
     color: #333;
@@ -1465,4 +1469,12 @@ textarea:focus {
     position: relative;
     left: 15px; /* Ajustez la valeur selon l'espace désiré */
 }
-
+@media screen and (max-width:900px) {
+    .margin-top-ls {
+        margin-top: 50%;
+    }
+    .logo-ls {
+        max-width: 35%;
+    }
+    
+}
