@@ -962,6 +962,15 @@ footer img {
     background-position: center center;
     text-align: center;
 }
+.bar-cv {
+    color: #333;
+    background: url(../img/cvBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
 .bar-certif {
     color: #333;
     background: url(../img/certifBg.png);
