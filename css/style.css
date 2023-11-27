@@ -228,13 +228,17 @@ h5 {
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before,
 .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
     background-color: #000; /* Couleur noire */
+    box-shadow: none;
 }
-
 .box-primary-nav-trigger .box-menu-text {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-weight: 700;
     display: none;
+    background-color: #fff;
+    padding-left: 4px;
+    padding-right: 40px;
+    border-radius: 10px;
 }
 .box-primary-nav-trigger .black {
     color: #000;
@@ -248,7 +252,6 @@ h5 {
 
 .black {
     color: #000;
-    
 }
 .box-primary-nav-trigger .box-menu-icon {
     display: inline-block;
@@ -259,9 +262,10 @@ h5 {
     right: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    box-shadow: 3px 2px 2px rgba(0,0,0,0.5);
     width: 18px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     list-style: none;
@@ -273,7 +277,8 @@ h5 {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #000;
+    box-shadow: 3px 2px 2px rgba(0,0,0,0.5);
     right: 0;
     -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
     -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
@@ -291,7 +296,8 @@ h5 {
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(178, 26, 26, 0);
+    box-shadow: none;
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before,
@@ -940,14 +946,12 @@ footer img {
     margin-bottom: 5%;
     /* Ajoutez d'autres styles selon vos besoins, comme la marge, le padding, etc. */
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
-    transition: transform 1s ease-in-out; /* Ajout de transition pour la propriété content */
-    transform-style: preserve-3d; /* Utilisation de l'effet 3D */
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
 }
 .tete:hover{
     transform: scale(1.1) rotateY(180deg);
   }
-
-
 
 .bar-mg {
     color: #333;
@@ -1474,7 +1478,19 @@ textarea:focus {
         margin-top: 50%;
     }
     .logo-ls {
-        max-width: 35%;
+        max-width: 60%;
+    }
+    .banner-ls {
+        max-height: 10%;
+    }
+    .fsizeh1 {
+        font-size: 30px !important;
+    }
+    .fsizeh1gsb {
+        font-size: 25px !important;
+    }
+    .fsizep {
+        font-size: 10px !important;
     }
     
 }
