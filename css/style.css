@@ -360,7 +360,7 @@ h5 {
 }
 
 .box-primary-nav li {
-    font-size: 22px;
+    font-size: 30px;
     font-size: 1.375rem;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -368,7 +368,7 @@ h5 {
     margin: .2em 0;
     text-transform: capitalize;
     text-shadow: 0 0 0 transparent; /* Ombre portée transparente par défaut */
-    transition: text-shadow 0.1s ease-in-out; /* Transition pour l'ombre du texte */
+    transition: text-shadow 0s ease-in-out; /* Transition pour l'ombre du texte */
 }
 
 .box-primary-nav li:hover {
@@ -385,6 +385,8 @@ text-shadow: 3px 3px 3px #8647a3; /* Ombre portée au survol */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    cursor: default;
+    font-size: 30px;
 }
 
 .box-primary-nav a:focus {
@@ -402,18 +404,21 @@ text-shadow: 3px 3px 3px #8647a3; /* Ombre portée au survol */
     font-weight: 700;
     font-size: 17px;
     margin: 2.4em 0 .8em;
+    cursor: default;
   }
 
 .box-primary-nav .box-social {
     display: inline-block;
     margin: 10px .4em;
+    cursor: default;
 }
 
 .box-primary-nav .box-social a {
-    width: 30px;
+    width: 40px;
     height: 30px;
     padding: 0;
-    font-size: 35px
+    font-size: 50px;
+    cursor: default;
 }
 
 .box-primary-nav.is-visible {
@@ -1320,8 +1325,8 @@ textarea:focus {
     cursor: default;
     color: #8647a3;
     font-weight: 700;
-    font-size: 17px;
-    margin: 2.4em 0 .8em;
+    margin-top: 10px;
+    font-size: 30px;
   }
   .box-primary-nav .arrow-down:hover {
     text-shadow: 0 0 0 transparent; /* Ombre portée transparente par défaut */
@@ -1366,16 +1371,17 @@ textarea:focus {
   }
   .selected{
     text-shadow: 3px 3px 3px #8647a3;
+    color: #8647a3;
   }
 
   .box-primary-nav .whatsapp {
     color: #42C552;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
     text-shadow: none;
-    font-size: 30px; /* Taille de la police initiale */
+    font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .whatsapp:hover {
-    font-size: 35px; /* Taille de la police agrandie */
+    font-size: 50px; /* Taille de la police agrandie */
     text-shadow: none;
   }
   .box-primary-nav .instagram {
@@ -1385,10 +1391,10 @@ textarea:focus {
     -webkit-text-fill-color: transparent;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
     text-shadow: none;
-    font-size: 30px; /* Taille de la police initiale */
+    font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .instagram:hover {
-    font-size: 35px; /* Taille de la police agrandie */
+    font-size: 50px; /* Taille de la police agrandie */
     text-shadow: none;
   }
   
@@ -1396,22 +1402,22 @@ textarea:focus {
     color: #126BC4;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
     text-shadow: none;
-    font-size: 30px; /* Taille de la police initiale */
+    font-size: 35px; /* Taille de la police initiale */
   }
   
   /* Au survol, augmenter la taille de la police */
   .box-primary-nav .linkedin:hover {
-    font-size: 35px; /* Taille de la police agrandie */
+    font-size: 50px; /* Taille de la police agrandie */
     text-shadow: none;
   }
   .box-primary-nav .github {
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
     text-shadow: none;
-    font-size: 30px; /* Taille de la police initiale */
+    font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .github:hover{
     text-shadow: none;
-    font-size: 35px; /* Taille de la police initiale */
+    font-size: 50px; /* Taille de la police initiale */
   }
 .cv-present {
     background-color: #936da5;
@@ -1436,6 +1442,10 @@ textarea:focus {
     color: white;
     margin-top: 15px;
 }
+.cv-present li {
+    color: white;
+    margin-top: 15px;
+}
 .cv-present h3 {
     color: white;
     margin-top: 1%;
@@ -1445,6 +1455,10 @@ textarea:focus {
 }
 .cv-present .no-margin-left{
     margin-left: -20%;
+   
+}
+.cv-present .no-margin-top{
+    margin-top: -4%;
    
 }
 .spaced-block {
