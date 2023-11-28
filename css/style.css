@@ -156,6 +156,19 @@ h5 {
 ==================================================*/
 /* Style initial pour le texte "Menu" et les traits */
 
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    background-color: transparent; /* Fond transparent */
+  }
 
 .box-header {
     position: absolute;
@@ -753,6 +766,12 @@ b i:last-child {
 .portfolio .categories-grid .categories ul li a:hover,
 .portfolio .categories-grid .categories ul li a:focus {
     text-decoration: none;
+    margin-left: 0;
+    background-color: rgba(183, 183, 183, 0.226);
+    padding: 0px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: default;
 }
 
 .portfolio .categories-grid .categories ul li a.active {
@@ -774,6 +793,7 @@ b i:last-child {
     display: block;
     border-radius: 60px;
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
+    max-width: 95%;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -905,6 +925,7 @@ footer img {
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
+    border-radius: 10px;
 }
 
 .cd-top.cd-is-visible,
@@ -948,11 +969,11 @@ footer img {
     margin-bottom: 5%;
     /* Ajoutez d'autres styles selon vos besoins, comme la marge, le padding, etc. */
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
 }
 .tete:hover{
-    transform: scale(1.1) rotateY(180deg);
+    transform: scale(1.1);
   }
 
 .bar-mg {
@@ -1319,7 +1340,7 @@ textarea:focus {
     #6525a0 0%,
     #bc3ee2 29%,
     rgb(119, 55, 138) 100%,
-    rgb(114, 46, 146) 67%
+    rgb(176, 59, 230) 67%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -1485,12 +1506,146 @@ textarea:focus {
     position: relative;
     left: 15px; /* Ajustez la valeur selon l'espace désiré */
 }
-.separation {
-    border-top: 10px ridge #6525a0;
-  }
 .bord {
-    border: 10px double #fff;
+    border: 10px double transparent;
 }
+.round-button{
+    position: relative;
+    background-color: #393939;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    width: 40px; 
+    height: 40px;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  .round-button img {
+    width: 20px; 
+    height: 20px;
+    
+  }
+  
+  .round-button:hover {
+    transition-duration: 0.1s;
+    background-color: #693784;
+    transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
+  }
+  
+  .round-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px #8647a3;
+  }
+  
+  .round-button:active:after {
+    box-shadow: 0 0 0 0 #8647a3;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  .select-color{
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #393939;
+    width: 30px; 
+    height: 30px;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  .select-color:hover {
+    transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
+    background-color: #693784;
+  }
+
+  .round-button:active {
+    top: 1px;
+  }
+  .button-container {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+  }
+  .size-adjust-button {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    position: relative;
+    background-color: #393939;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    width: 30px;
+    height: 30px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .size-adjust-button img {
+    width: 20px; /* Ajustez la taille de l'icône selon vos besoins */
+    height: 20px;
+    
+  }
+
+  .size-adjust-button:hover {
+    transition-duration: 0.1s;
+    background-color: #693784;
+    transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
+  }
+  
+  .size-adjust-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px #8647a3;
+  }
+  
+  .size-adjust-button:active:after {
+    box-shadow: 0 0 0 0 #8647a3;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .size-adjust-button:active {
+    top: 1px;
+  }
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -1518,6 +1673,18 @@ textarea:focus {
     }
     .fsizep {
         font-size: 10px !important;
+    }
+    .size-adjust-button, .round-button, .select-color {
+        display: none;
+    }
+    .tete {
+        margin-top: -5%;
+    }
+    .box-primary-nav li {
+      font-size: 30px;
+    }
+    .box-primary-nav {
+        overflow: hidden;
     }
     
 }

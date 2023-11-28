@@ -16,20 +16,16 @@
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
-
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
+    <!-- ça c'est pour la souris verte -->
+    <script src="js/mouse.js"></script>
 </head>
 
 <body>
-
+    <!-- Une souris verte, qui courait dans l'herbe... -->
+    <canvas id="mouse-trail"></canvas>
     <!-- Preloader -->
     <div id="preloader">
         <div class="pre-container">
@@ -42,18 +38,32 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
+        <!-- box header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img class="rounded" src="img/AUBL.png" width="50" alt="Logo"></a>
+                <div class="button-container">
+                    <a href="index.html"><img class="rounded" src="img/AUBL.png" width="50" alt="Logo"></a>
+                    <button id="toggleButton" class="round-button">
+                        <img src="img/magic.png" alt="Baguette magique">
+                    </button>
+                    <button id="increaseButton" class="size-adjust-button">
+                        <img src="img/+.png" alt="+">
+                    </button>
+                    <button id="decreaseButton" class="size-adjust-button">
+                        <img src="img/-.png" alt="-">
+                    </button>
+                    <input type="color" id="colorPicker" value="#b03be6" class="select-color">
+                  </div>  
             </div>
-        
-            <a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text black">Menu<span class="box-menu-icon"></span></span>
-            </a>
-        </header>
+            <!-- box-nav -->
+            <div>
+                <a class="box-primary-nav-trigger" href="#0">
+                    <span class="box-menu-text black">Menu<span class="box-menu-icon"></span></span>
+                </a>
+            </div>
             <!-- box-primary-nav-trigger -->
         </header>
-        <!-- end box-header -->
+        <!-- end box header -->
 
         <!-- nav -->
         <nav>
