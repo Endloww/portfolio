@@ -794,6 +794,7 @@ b i:last-child {
     border-radius: 60px;
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
     max-width: 95%;
+    margin-left: 15px;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -979,6 +980,42 @@ footer img {
 .bar-mg {
     color: #333;
     background: url(../img/mgBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.bar-parc {
+    color: #333;
+    background: url(../img/parcoursBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.bar-comp {
+    color: #333;
+    background: url(../img/competenceBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.bar-contact {
+    color: #333;
+    background: url(../img/contactBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.bar-vt {
+    color: #333;
+    background: url(../img/vtBg.png);
     padding: 150px 0 150px;
     background-size:cover;
     background-attachment: fixed;
@@ -1461,7 +1498,7 @@ textarea:focus {
     font-size: 50px; /* Taille de la police initiale */
   }
 .cv-present {
-    background-color: #936da5;
+    background-color: #4F3074;
     align-items: center;
     border-radius: 20px;
     margin-bottom: 15px;
