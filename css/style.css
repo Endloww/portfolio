@@ -772,6 +772,8 @@ b i:last-child {
     position: relative;
     overflow: hidden;
     display: block;
+    border-radius: 60px;
+    box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -1328,6 +1330,7 @@ textarea:focus {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
+  font-size: 20px;
 }
 
 @keyframes textclip {
@@ -1482,6 +1485,21 @@ textarea:focus {
     position: relative;
     left: 15px; /* Ajustez la valeur selon l'espace désiré */
 }
+.separation {
+    border-top: 10px ridge #6525a0;
+  }
+.bord {
+    border: 10px double #fff;
+}
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
 @media screen and (max-width:900px) {
     .margin-top-ls {
         margin-top: 50%;
