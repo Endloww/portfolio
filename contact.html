@@ -185,23 +185,39 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault(); // Empêche le comportement par défaut du formulaire
-            
+
             // Récupération des valeurs des champs
-            const name = document.querySelector('input[name="from_name"]').value.trim();
-            const email = document.querySelector('input[name="from_mail"]').value.trim();
-            const message = document.querySelector('textarea[name="message"]').value.trim();
-    
+            const nameField = document.querySelector('input[name="from_name"]');
+            const emailField = document.querySelector('input[name="from_mail"]');
+            const messageField = document.querySelector('textarea[name="message"]');
+            const name = nameField.value.trim();
+            const email = emailField.value.trim();
+            const message = messageField.value.trim();
+
             // Vérification si les champs sont vides
             if (name === '' || email === '' || message === '') {
                 alert('Veuillez remplir tous les champs du formulaire.');
             } else {
+                // Sauvegarde des valeurs avant envoi pour pouvoir les effacer après
+                const nameValue = nameField.value;
+                const emailValue = emailField.value;
+                const messageValue = messageField.value;
+
                 // Si les champs sont remplis, envoi du formulaire
                 emailjs.sendForm('service_e7seyyw', 'template_f6qd1jc', this)
                     .then(function() {
                         alert('Email envoyé !');
+                        // Réinitialisation des champs après envoi réussi
+                        nameField.value = '';
+                        emailField.value = '';
+                        messageField.value = '';
                     }, function(error) {
                         console.error(error);
                         alert('Echec de l\'envoi du mail');
+                        // Restauration des valeurs précédentes en cas d'échec
+                        nameField.value = nameValue;
+                        emailField.value = emailValue;
+                        messageField.value = messageValue;
                     });
             }
         });
