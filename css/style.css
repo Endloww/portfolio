@@ -1622,13 +1622,9 @@ textarea:focus {
     align-items: center; /* Centre verticalement les éléments */
   }
   .size-adjust-button {
-    display: flex; /* Utilisation de flexbox */
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
     position: relative;
     background-color: #393939;
     border-radius: 4em;
-    font-size: 16px;
     color: white;
     margin-left: 10px;
     cursor: pointer;
@@ -1641,19 +1637,22 @@ textarea:focus {
     width: 30px;
     height: 30px;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
   }
-
+  
   .size-adjust-button img {
-    width: 20px; /* Ajustez la taille de l'icône selon vos besoins */
-    height: 20px;
-    
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
-
+  
   .size-adjust-button:hover {
     transition-duration: 0.1s;
     background-color: #693784;
-    transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
+    transform: scale(1.1);
   }
   
   .size-adjust-button:after {
@@ -1683,6 +1682,7 @@ textarea:focus {
   .size-adjust-button:active {
     top: 1px;
   }
+  
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;

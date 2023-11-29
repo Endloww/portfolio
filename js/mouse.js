@@ -8,15 +8,32 @@ document.addEventListener('DOMContentLoaded', function() {
     let isDrawing = false;
     let particleSize = 3;
     let selectedColor = "#b03be6"; // Couleur par défaut
+
+    const increaseButton = document.getElementById('increaseButton');
+    const decreaseButton = document.getElementById('decreaseButton');
+    const colorPicker = document.getElementById('colorPicker');
+     // Ajoutez les classes pour cacher initialement les boutons et l'input
+    increaseButton.classList.add('hide');
+    decreaseButton.classList.add('hide');
+    colorPicker.classList.add('hide');
   
     document.getElementById('toggleButton').addEventListener('click', function() {
       isDrawing = !isDrawing; // Inversion de l'état actuel de la trainée
   
-      if (!isDrawing) {
-        // Si la trainée doit être arrêtée, videz le tableau de particules
-        particles = [];
-      }
-    });
+       if (isDrawing) {
+      increaseButton.classList.add('show');
+      decreaseButton.classList.add('show');
+      colorPicker.classList.add('show');
+    } else {
+      increaseButton.classList.remove('show');
+      decreaseButton.classList.remove('show');
+      colorPicker.classList.remove('show');
+    }
+
+    if (!isDrawing) {
+      particles = [];
+    }
+  });
   
     document.getElementById('increaseButton').addEventListener('click', function() {
       if (isDrawing) {
