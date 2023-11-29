@@ -21,6 +21,7 @@
 
     <!-- ça c'est pour la souris verte -->
     <script src="js/mouse.js"></script>
+
 </head>
 
 <body>
@@ -36,6 +37,8 @@
         </div>
     </div>
     <!-- end Preloader -->
+
+    <style>.double-bounce1,.double-bounce2 {background-color: #CDA718;}</style>
 
     <div class="container-fluid">
         <!-- box header -->
@@ -101,34 +104,29 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-6">
-            <form action="#" method="post">
+            <form id="contact-form">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="name">
-                            <span>Nom</span>
+                            <input type="text" name="from_name" autocomplete="off">
+                            <span>Nom complet</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="email">
+                            <input type="text" name="from_mail" autocomplete="off">
                             <span>Email</span>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="input-contact">
-                            <input type="text" name="object">
-                            <span>Objet</span>
-                        </div>
-                    </div>
+                  
                     <div class="col-md-12">
                         <div class="textarea-contact">
                             <textarea name="message"></textarea>
-                            <span>message</span>
+                            <span>Message</span>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-box fondJaune">Envoyer</a>
+                        <input type="submit" value="Envoyer" class="btn btn-box fondJaune">
                     </div>
                 </div>
             </form>
@@ -136,12 +134,11 @@
 
         <div class="col-md-6">
             <h3 class="text-uppercase">me contacter</h3>
-            <h5 class="jaune">Creative & Lorem ipsum dolor sit amet</h5>
+            <h5 class="jaune">Créatif et passionné par le développement web</h5>
             <div class="h-30"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus.
-                Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde
-                etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-,
-                bene laudata virtus voluptatis aditus </p>
+            <p> Bonjour ! Je suis Aurélien Blanchet, un passionné de développement web et de design. 
+                Mon objectif est de créer des expériences en ligne engageantes et conviviales pour les utilisateurs. 
+                Je suis disponible pour discuter de projets passionnants ou pour répondre à toute question que vous pourriez avoir.</p>
             <div class="contact-info">
                 <p><i class="ion-android-call fondJaune"></i> 06 62 31 79 16</p>
                 <p><i class="ion-ios-email fondJaune"></i> aurelien.blanchet74@gmail.com</p>
@@ -177,6 +174,38 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
+
+    <!-- EMAIL JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('lhQhIS3US099VGUbU');
+      })();
+    </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche le comportement par défaut du formulaire
+            
+            // Récupération des valeurs des champs
+            const name = document.querySelector('input[name="from_name"]').value.trim();
+            const email = document.querySelector('input[name="from_mail"]').value.trim();
+            const message = document.querySelector('textarea[name="message"]').value.trim();
+    
+            // Vérification si les champs sont vides
+            if (name === '' || email === '' || message === '') {
+                alert('Veuillez remplir tous les champs du formulaire.');
+            } else {
+                // Si les champs sont remplis, envoi du formulaire
+                emailjs.sendForm('service_e7seyyw', 'template_f6qd1jc', this)
+                    .then(function() {
+                        alert('Email envoyé !');
+                    }, function(error) {
+                        console.error(error);
+                        alert('Echec de l\'envoi du mail');
+                    });
+            }
+        });
+    </script>
 
 </body>
 

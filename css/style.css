@@ -248,10 +248,11 @@ canvas {
     text-transform: uppercase;
     font-weight: 700;
     display: none;
-    background-color: #fff;
+    background-color: #ffffff3c;
     padding-left: 4px;
     padding-right: 40px;
     border-radius: 10px;
+    box-shadow: 3px 2px 2px rgba(0,0,0,0.5);
 }
 .box-primary-nav-trigger .black {
     color: #000;
@@ -1149,11 +1150,13 @@ footer img {
     margin-right: 10px;
 }
 
+
 .textarea-contact {
     height: 200px;
     width: 100%;
     border: solid 1px rgba(0, 0, 0, .1);
     position: relative;
+    border-radius: 15px;
 }
 
 .textarea-contact textarea {
@@ -1189,6 +1192,7 @@ footer img {
     border: solid 1px rgba(0, 0, 0, .1);
     position: relative;
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 
 .input-contact input[type="text"] {
@@ -1246,6 +1250,7 @@ textarea:focus {
     margin-right: 10px;
     color: #fff;
     font-size: 21px;
+    border-radius: 5px;
 }
 
 .contact-info p {
@@ -1254,7 +1259,6 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #8647a3;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;
@@ -1262,11 +1266,13 @@ textarea:focus {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
 }
 
 .btn-box:hover,
 .btn-box:focus {
-    background: #8647a3;
+    transform: scale(0.9); /* Zoom au survol à 120% de la taille d'origine */
     color: #fff;
 }
 
@@ -1281,8 +1287,13 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #3C8ABC;
+    color: #8647a3;
 }
+.cat-ul li .bleu {
+    margin-right: 10px;
+    color: #3C8ABC; 
+}
+
 
 
 /* Responsive media queries
@@ -1685,13 +1696,13 @@ textarea:focus {
     color: #3C8ABC;
   }
   .jaune {
-    color: #aca33b;
+    color: #AE8E1C;
   }
   .fondJaune {
-    background-color:  #928930;
+    background-color:  #947a19;
   }
   .fondJaune:hover {
-    background-color: #aca33b;
+    background-color: #AE8E1C;
   }
   
   @keyframes gradientAnimation {
