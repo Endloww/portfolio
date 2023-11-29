@@ -484,7 +484,7 @@ display: table-row;
 }
 
 b i:last-child {
-    color: #8647a3 !important;
+    color: #3C8ABC;
 }
 
 .box-intro h5 {
@@ -1220,7 +1220,7 @@ footer img {
 
 .input-contact>span.active,
 .textarea-contact>span.active {
-    color: #8647a3;
+    color: #928930;
     font-size: 10px;
     top: 0px;
     left: 5px;
@@ -1241,7 +1241,6 @@ textarea:focus {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background: #8647a3;
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
@@ -1282,7 +1281,7 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #8647a3;
+    color: #3C8ABC;
 }
 
 
@@ -1681,6 +1680,18 @@ textarea:focus {
   
   .size-adjust-button:active {
     top: 1px;
+  }
+  .bleu {
+    color: #3C8ABC;
+  }
+  .jaune {
+    color: #aca33b;
+  }
+  .fondJaune {
+    background-color:  #928930;
+  }
+  .fondJaune:hover {
+    background-color: #aca33b;
   }
   
   @keyframes gradientAnimation {
