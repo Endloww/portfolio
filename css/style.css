@@ -1704,6 +1704,12 @@ textarea:focus {
   .fondJaune:hover {
     background-color: #AE8E1C;
   }
+  .gif {
+    border-radius: 10px;
+  }
+  .gif:hover {
+    color: none;
+  }
   
   @keyframes gradientAnimation {
     0% {
