@@ -276,7 +276,7 @@ canvas {
     right: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    box-shadow: 3px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
     width: 18px;
     height: 2px;
     background-color: #000;
@@ -288,11 +288,11 @@ canvas {
 .box-primary-nav-trigger .box-menu-icon::before,
 .box-primary-nav-trigger .box-menu-icon:after {
     content: '';
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     position: absolute;
     background-color: #000;
-    box-shadow: 3px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
     right: 0;
     -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
     -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
@@ -323,6 +323,7 @@ canvas {
     top: 0;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+    
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
@@ -332,9 +333,9 @@ canvas {
 }
 
 .box-primary-nav-trigger {
-    width: 100px;
-    padding-left: 1em;
-    background-color: transparent;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #fff;
     height: 30px;
     line-height: 30px;
     right: 10px;
@@ -342,6 +343,7 @@ canvas {
     bottom: auto;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+
 }
 
 .box-primary-nav-trigger .box-menu-text {
@@ -942,10 +944,64 @@ b i:last-child {
     border-radius: 35px;
     background: url(../img/contactBg.png);
 }
+.rougeBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/certifBg.png);
+}
+.violetBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/itilBg.png);
+}
+.vtBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/vtBg.png);
+}
+.bleuclairBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/parcoursBg.png);
+}
+.vertclairBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/competenceBg.png);
+}
+.noirBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/projBg.png);
+}
 
 
 .copyright {
-    color: #ccc;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -1354,6 +1410,15 @@ textarea:focus {
     margin-right: 10px;
     color: #358E5D; 
 }
+.cat-ul li .jaune {
+    margin-right: 10px;
+    color: #BDAF0D; 
+}
+.cat-ul li .rouge {
+    margin-right: 10px;
+    color: #983248; 
+}
+
 
 
 
@@ -1483,6 +1548,48 @@ textarea:focus {
   display: inline-block;
   font-size: 25px;
 }
+.animate-jaune
+{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #BDAF0D 0%,
+    #e7d61d 29%,
+    rgb(190, 185, 55) 100%,
+    rgb(164, 177, 20) 67%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 25px;
+}
+.animate-rouge
+{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #983248 0%,
+    #eb1342 29%,
+    rgb(148, 32, 32) 100%,
+    rgb(177, 20, 20) 67%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 25px;
+}
 .animate-bleu 
 {
     text-transform: uppercase;
@@ -1576,22 +1683,22 @@ textarea:focus {
   .box-primary-nav .whatsapp {
     color: #42C552;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
     font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .whatsapp:hover {
     font-size: 50px; /* Taille de la police agrandie */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
   }
 .whatsapp {
     color: #42C552;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 35px; /* Taille de la police initiale */
   }
 .whatsapp:hover {
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
   .box-primary-nav .instagram {
     background: linear-gradient(90deg, rgba(114,50,189,1) 0%, rgba(195,42,163,1) 50%, rgba(244,111,48,1) 100%);
@@ -1599,12 +1706,12 @@ textarea:focus {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
     font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .instagram:hover {
     font-size: 50px; /* Taille de la police agrandie */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
   }
 .instagram {
     background: linear-gradient(90deg, rgba(114,50,189,1) 0%, rgba(195,42,163,1) 50%, rgba(244,111,48,1) 100%);
@@ -1612,63 +1719,68 @@ textarea:focus {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     font-size: 35px; /* Taille de la police initiale */
   }
 .instagram:hover {
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
   
   .box-primary-nav .linkedin {
     color: #126BC4;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
     font-size: 35px; /* Taille de la police initiale */
   }
   
   /* Au survol, augmenter la taille de la police */
   .box-primary-nav .linkedin:hover {
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
   }
 .linkedin {
     color: #126BC4;
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 35px; /* Taille de la police initiale */
   }
   
   /* Au survol, augmenter la taille de la police */
 .linkedin:hover {
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
   .box-primary-nav .github {
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: none;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
     font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .github:hover{
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
   }
 .github {
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 35px; /* Taille de la police initiale */
     color: #131313;
   }
 .github:hover{
     font-size: 45px; /* Taille de la police agrandie */
-    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     color: #131313;
   }
 .cv-present {
-    background-color: #4F3074;
+    background-color: #694298;
     align-items: center;
     border-radius: 20px;
     margin-bottom: 15px;
+    box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+.cv-present:hover {
+    transform: scale(0.95); /* Zoom au survol à 120% de la taille d'origine */
 }
 .cv-photo {
     max-width: 80%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
@@ -1683,6 +1795,15 @@ textarea:focus {
 .cv-photo:hover {
     transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
   }
+.cv-photo-main {
+    max-width: 80%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Ajustez la hauteur de l'image en conséquence */
+    border-radius: 10%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    /* Ajoutez d'autres styles selon vos besoins, comme la marge, le padding, etc. */
+    box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
+}
 .cv-present p {
     color: white;
     margin-top: 15px;
@@ -1860,7 +1981,13 @@ textarea:focus {
   }
 
   .jaune {
-    color: #AE8E1C;
+    color: #BDAF0D;
+  }
+  .rouge {
+    color: #983248;
+  }
+  .violet {
+    color: #8647a3;
   }
   .fondJaune {
     background-color:  #947a19;
@@ -1885,12 +2012,52 @@ textarea:focus {
     width: 100%;
     height: 100%;
   }
-  .custom-iframe {
-    border-radius: 15px;
-    overflow: hidden; 
+.custom-iframe {
+border-radius: 15px;
+overflow: hidden; 
+box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.5);
+}
+.unmargin {
+    margin-top: -58px;
+}
+.unmargin2 {
+    margin-top: -30px;
+}
+.cv-present .unli {
+    margin: -2px;
+}
+.cvh5 {
+    color: #fff;
+    text-decoration: underline;
+}
+.cvh4 {
+    color: #fff;
+}
+.cvh4under {
+    color: #fff;
+    text-decoration: underline;
+}
+.hr {
+    margin-top: -5px;
+}
+.competence {
+    background-color: #fff;
+    padding: 10px;
+    width: 400px;
+    margin-left: 55px;
+    border-radius: 5px;
+    align-content: center;
     box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.5);
+}
+.competence img {
+    margin-right: 4px;
+    transition: transform 0.3s ease;
+}
+.competence img:hover {
+    transform: scale(1.2); /* Zoom au survol à 120% de la taille d'origine */
+}
 
-  }
+  
   
   @keyframes gradientAnimation {
     0% {
