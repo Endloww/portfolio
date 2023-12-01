@@ -1113,10 +1113,12 @@ footer img {
 .social-ul li {
     margin: 0 10px;
     float: left;
+    width: 40px;
+    height: 30px;
 }
 
 .social-ul li a {
-    font-size: 25px;
+    
     color: #555;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -1424,10 +1426,14 @@ textarea:focus {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
 }
-.default {
-    color: #393939;
+.defaulth4 {
+    color: #464343;
+    font-size: 17px;
+}
+.defaultp {
+    color: #464343;
 }
 
 @keyframes textclip {
@@ -1501,6 +1507,16 @@ textarea:focus {
     font-size: 50px; /* Taille de la police agrandie */
     text-shadow: none;
   }
+.whatsapp {
+    color: #42C552;
+    transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    font-size: 35px; /* Taille de la police initiale */
+  }
+.whatsapp:hover {
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+  }
   .box-primary-nav .instagram {
     background: linear-gradient(90deg, rgba(114,50,189,1) 0%, rgba(195,42,163,1) 50%, rgba(244,111,48,1) 100%);
     background-clip: text;
@@ -1514,6 +1530,19 @@ textarea:focus {
     font-size: 50px; /* Taille de la police agrandie */
     text-shadow: none;
   }
+.instagram {
+    background: linear-gradient(90deg, rgba(114,50,189,1) 0%, rgba(195,42,163,1) 50%, rgba(244,111,48,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    font-size: 35px; /* Taille de la police initiale */
+  }
+.instagram:hover {
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+  }
   
   .box-primary-nav .linkedin {
     color: #126BC4;
@@ -1524,8 +1553,20 @@ textarea:focus {
   
   /* Au survol, augmenter la taille de la police */
   .box-primary-nav .linkedin:hover {
-    font-size: 50px; /* Taille de la police agrandie */
-    text-shadow: none;
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+  }
+.linkedin {
+    color: #126BC4;
+    transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    font-size: 35px; /* Taille de la police initiale */
+  }
+  
+  /* Au survol, augmenter la taille de la police */
+.linkedin:hover {
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
   }
   .box-primary-nav .github {
     transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
@@ -1533,8 +1574,19 @@ textarea:focus {
     font-size: 35px; /* Taille de la police initiale */
   }
   .box-primary-nav .github:hover{
-    text-shadow: none;
-    font-size: 50px; /* Taille de la police initiale */
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+  }
+.github {
+    transition: font-size 0.2s ease-in-out; /* Transition pour la taille de la police */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    font-size: 35px; /* Taille de la police initiale */
+    color: #131313;
+  }
+.github:hover{
+    font-size: 45px; /* Taille de la police agrandie */
+    text-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    color: #131313;
   }
 .cv-present {
     background-color: #4F3074;
