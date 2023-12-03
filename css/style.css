@@ -1688,6 +1688,7 @@ textarea:focus {
 .title-p-vert {
     display: inline-block;
     background: url(../img/awocBg.png);
+    box-shadow:5px 5px 7px 0 rgba(0,0,0,0.5);
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
