@@ -6,7 +6,15 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #999;
+    scrollbar-width: thin; /* Pour Firefox */
+    scrollbar-color: transparent transparent; /* Pour Firefox */
+    -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
 }
+body::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+
 
 .plus-icon {
     font-size: 24px; /* Taille de la police */
@@ -1059,51 +1067,7 @@ footer img {
     height: 20px;
 }
 
-/* SCROLL BAR TOP */
-.index::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #392458,#6D3885,#6D3885,#392458);
-}
-::-webkit-scrollbar-track {
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    border-radius: 50px;
-}
 
-::-webkit-scrollbar {
-    display: flex;
-}
-.awoc::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #213C33,#369861,#369861,#213C33);
-}
-.gsb::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #273859,#3D90C2,#3D90C2,#273859);
-}
-.certif::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #371F2C,#9E3D51,#9E3D51,#371F2C);
-}
-.comp::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #233C1E,#8AD672,#8AD672,#233C1E);
-}
-.parc::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #15313C,#4EB5D6,#4EB5D6,#15313C);
-}
-.contact::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow:0px 0px 10px 0 rgba(11, 6, 12, 0.737) inset;
-    background-image: linear-gradient(to top, #4C3E0F,#BF9C20,#BF9C20,#4C3E0F);
-}
-/* SCROLL BAR END */
 
 
 
