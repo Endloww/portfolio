@@ -11,6 +11,7 @@ body {
     -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
 }
 body::-webkit-scrollbar {
+    width: 0;
     background-color: transparent;
   }
 
