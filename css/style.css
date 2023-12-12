@@ -855,8 +855,9 @@ b i:last-child {
     display: block;
     border-radius: 60px;
     box-shadow:10px 10px 10px 0 rgba(0,0,0,0.5);
-    max-width: 95%;
-    margin-left: 15px;
+    max-width: 98%;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -962,6 +963,25 @@ b i:last-child {
     border-radius: 35px;
     background: url(../img/projBg.png);
 }
+
+.copyright {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+footer img {
+    margin: 0 auto;
+}
+/* Espace après le footer */
+.espace-apres-footer {
+    height: 20px;
+}
+/* end footer
+==================================================*/
+
+
+/* bgColors
+==================================================*/
 .bleuBg{
     padding: 30px 0;
     text-align: center;
@@ -1053,22 +1073,8 @@ b i:last-child {
     background: url(../img/projBg.png);
 }
 
-
-.copyright {
-    color: #fff;
-    margin-bottom: 0;
-}
-
-footer img {
-    margin: 0 auto;
-}
-/* Espace après le footer */
-.espace-apres-footer {
-    height: 20px;
-}
-
-
-
+/* end bgColors
+==================================================*/
 
 
 /* backto top
