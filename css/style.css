@@ -2194,8 +2194,20 @@ margin-top: -40px;
 .replace-iframe {
     display: none;
 }
-
-  
+.img-fit {
+    width: 100%; /* L'image prendra toute la largeur du conteneur */
+    height: 100%; /* L'image prendra toute la hauteur du conteneur */
+    object-fit: cover; /* L'image couvrira tout le conteneur sans être déformée */
+}
+.last-portfolio-item {
+    width: 101.25vw; /* Largeur de 100% de la vue */
+}
+.test25 {
+    width: 25vw;
+}
+.test50 {
+    width: 50vw;
+}
   
   @keyframes gradientAnimation {
     0% {
@@ -2262,3 +2274,47 @@ margin-top: -40px;
       }
     
 }
+
+@media screen and (min-width: 2000px) {
+    body {
+        width: 100%; /* Réduction de la largeur de la page de 20% */
+    }
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.styled-table td, .styled-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.styled-table b {
+    font-weight: bold;
+}
+
+.styled-table i {
+    font-style: italic;
+}
+
+.styled-table font[size='5'] {
+    font-size: 20px; /* Adapter la taille de la police au besoin */
+}
+
+.styled-table .animate-rouge {
+    color: red; /* Modifier la couleur selon vos préférences */
+}
+
+/* Styles spécifiques pour différentes parties du tableau */
+.styled-table colgroup {
+    /* Vos styles pour colgroup */
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Modifier la couleur d'arrière-plan des lignes paires */
+}
+
