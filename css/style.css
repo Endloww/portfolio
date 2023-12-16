@@ -9,6 +9,7 @@ body {
     scrollbar-width: thin; /* Pour Firefox */
     scrollbar-color: transparent transparent; /* Pour Firefox */
     -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 0;
@@ -349,6 +350,14 @@ canvas {
 .box-primary-nav-trigger .rouge-ico.is-clicked::before,
 .box-primary-nav-trigger .rouge-ico.is-clicked::after {
     box-shadow: 0px 0px 5px #ea1555;
+}
+.box-primary-nav-trigger .orange-ico.is-clicked::before,
+.box-primary-nav-trigger .orange-ico.is-clicked::after {
+    box-shadow: 0px 0px 5px #f67b29;
+}
+.box-primary-nav-trigger .orange-ico::before,
+.box-primary-nav-trigger .orange-ico:after {
+    box-shadow: 0px 0px 5px #f67b29;
 }
 
 
@@ -1019,6 +1028,15 @@ footer img {
     border-radius: 35px;
     background: url(../img/contactBg.png);
 }
+.tabCompBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    background: url(../img/tabCompBg.png);
+}
 .rougeBg {
     padding: 30px 0;
     text-align: center;
@@ -1187,6 +1205,15 @@ footer img {
 .bar-vt {
     color: #333;
     background: url(../img/vtBg.png);
+    padding: 150px 0 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+.bar-orange {
+    color: #333;
+    background: url(../img/tabCompBg.png);
     padding: 150px 0 150px;
     background-size:cover;
     background-attachment: fixed;
@@ -1479,7 +1506,11 @@ textarea:focus {
 }
 .cat-ul li .rouge {
     margin-right: 10px;
-    color: #983248; 
+    color: #983248;
+}
+.cat-ul li .orange {
+    margin-right: 10px;
+    color: #f67b29; 
 }
 
 
@@ -1731,6 +1762,26 @@ textarea:focus {
   display: inline-block;
   font-size: 25px;
 }
+.animate-orange {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #B45517 0%,
+      #f67b29 29%,
+      rgb(161, 68, 15) 100%,
+      rgb(193, 79, 14) 67%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 25px;
+}
 .animate-bleu 
 {
     text-transform: uppercase;
@@ -1839,7 +1890,7 @@ textarea:focus {
     font-size: 35px; /* Taille de la police initiale */
   }
 .whatsapp:hover {
-    font-size: 45px; /* Taille de la police agrandie */
+    font-size: 40px; /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
   .box-primary-nav .instagram {
@@ -1865,7 +1916,7 @@ textarea:focus {
     font-size: 35px; /* Taille de la police initiale */
   }
 .instagram:hover {
-    font-size: 45px; /* Taille de la police agrandie */
+    font-size: 40px; /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
   
@@ -1890,7 +1941,7 @@ textarea:focus {
   
   /* Au survol, augmenter la taille de la police */
 .linkedin:hover {
-    font-size: 45px; /* Taille de la police agrandie */
+    font-size: 40px; /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
   .box-primary-nav .github {
@@ -1909,7 +1960,7 @@ textarea:focus {
     color: #131313;
   }
 .github:hover{
-    font-size: 45px; /* Taille de la police agrandie */
+    font-size: 40px; /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     color: #131313;
   }
@@ -2003,7 +2054,7 @@ textarea:focus {
   
   .round-button:hover {
     transition-duration: 0.1s;
-    background-color: #693784;
+    background-color: #555555;
     transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
   }
   
@@ -2018,11 +2069,11 @@ textarea:focus {
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 40px #8647a3;
+    box-shadow: 0 0 10px 30px #555555;
   }
   
   .round-button:active:after {
-    box-shadow: 0 0 0 0 #8647a3;
+    box-shadow: 0 0 0 0 #555555;
     position: absolute;
     border-radius: 4em;
     left: 0;
@@ -2041,7 +2092,7 @@ textarea:focus {
   }
   .select-color:hover {
     transform: scale(1.1); /* Zoom au survol à 120% de la taille d'origine */
-    background-color: #693784;
+    background-color: #555555;
   }
 
   .round-button:active {
@@ -2081,7 +2132,7 @@ textarea:focus {
   
   .size-adjust-button:hover {
     transition-duration: 0.1s;
-    background-color: #693784;
+    background-color: #555555;
     transform: scale(1.1);
   }
   
@@ -2096,11 +2147,11 @@ textarea:focus {
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 40px #8647a3;
+    box-shadow: 0 0 10px 20px #555555;
   }
   
   .size-adjust-button:active:after {
-    box-shadow: 0 0 0 0 #8647a3;
+    box-shadow: 0 0 0 0 #555555;
     position: absolute;
     border-radius: 4em;
     left: 0;
@@ -2127,6 +2178,9 @@ textarea:focus {
   }
   .rouge {
     color: #983248;
+  }
+  .orange {
+    color: #f67b29;
   }
   .violet {
     color: #8647a3;
@@ -2285,14 +2339,14 @@ margin-top: -40px;
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
+
 }
 
 .styled-table td, .styled-table th {
-    border: 1px solid #ddd;
+    border: 2px solid #121212;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
-
 .styled-table b {
     font-weight: bold;
 }
@@ -2305,7 +2359,7 @@ margin-top: -40px;
     font-size: 20px; /* Adapter la taille de la police au besoin */
 }
 
-.styled-table .animate-rouge {
+.styled-table .animate-orange{
     color: red; /* Modifier la couleur selon vos préférences */
 }
 
@@ -2317,4 +2371,6 @@ margin-top: -40px;
 .styled-table tr:nth-child(even) {
     background-color: #f2f2f2; /* Modifier la couleur d'arrière-plan des lignes paires */
 }
-
+.table-title {
+    color: rgb(206, 110, 27);
+}
