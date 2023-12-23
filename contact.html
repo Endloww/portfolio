@@ -38,7 +38,12 @@
     </div>
     <!-- end Preloader -->
 
-    <style>.double-bounce1,.double-bounce2 {background-color: #CDA718;}</style>
+    <style>
+        .double-bounce1,
+        .double-bounce2 {
+            background-color: #CDA718;
+        }
+    </style>
 
     <div class="container-fluid">
         <!-- box header -->
@@ -56,7 +61,7 @@
                         <img src="img/-.png" alt="-">
                     </button>
                     <input type="color" id="colorPicker" value="#b03be6" class="select-color">
-                  </div>  
+                </div>
             </div>
             <!-- box-nav -->
             <div>
@@ -84,10 +89,14 @@
 
                 <li class="box-label arrow-down">Suivez-moi</li>
 
-                <li class="box-social"><a href="https://wa.link/ygbzv2" target="_blank"><i class="icon ion-social-whatsapp-outline whatsapp"></i></a></li>
-                <li class="box-social"><a href="" target="_blank"><i class="ion-social-instagram-outline instagram"></i></a></li>
-                <li class="box-social"><a href="https://github.com/Endloww" target="_blank"><i class="ion-social-github github"></i></a></li>
-                <li class="box-social"><a href="https://www.linkedin.com/in/aurelien-blanchet-7a934a275/" target="_blank"><i class="ion-social-linkedin linkedin"></i></a></li>
+                <li class="box-social"><a href="https://wa.link/ygbzv2" target="_blank"><i
+                            class="icon ion-social-whatsapp-outline whatsapp"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/aubl.https/" target="_blank"><i
+                            class="ion-social-instagram-outline instagram"></i></a></li>
+                <li class="box-social"><a href="https://github.com/Endloww" target="_blank"><i
+                            class="ion-social-github github"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/aurelien-blanchet-7a934a275/"
+                        target="_blank"><i class="ion-social-linkedin linkedin"></i></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -119,7 +128,7 @@
                             <span>Email</span>
                         </div>
                     </div>
-                  
+
                     <div class="col-md-12">
                         <div class="textarea-contact">
                             <textarea name="message"></textarea>
@@ -137,9 +146,10 @@
             <h3 class="text-uppercase">me contacter</h3>
             <h4 class="jaune">Créatif et passionné par le développement web</h4>
             <div class="h-30"></div>
-            <p class="defaultp"> Bonjour ! Je suis Aurélien Blanchet, un passionné de développement web et de design. 
-                Mon objectif est de créer des expériences en ligne engageantes et conviviales pour les utilisateurs. 
-                Je suis disponible pour discuter de projets passionnants ou pour répondre à toute question que vous pourriez avoir.</p>
+            <p class="defaultp"> Bonjour ! Je suis Aurélien Blanchet, un passionné de développement web et de design.
+                Mon objectif est de créer des expériences en ligne engageantes et conviviales pour les utilisateurs.
+                Je suis disponible pour discuter de projets passionnants ou pour répondre à toute question que vous
+                pourriez avoir.</p>
             <div class="contact-info">
                 <p class="defaultp"><i class="ion-android-call fondJaune"></i> 06 62 31 79 16</p>
                 <p class="defaultp"><i class="ion-ios-email fondJaune"></i> aurelien.blanchet74@gmail.com</p>
@@ -151,10 +161,10 @@
     <!-- end main-container -->
 
     <!-- footer -->
-        <div class="container-fluid jauneContactBg">
-            <p class="copyright">© Portfolio Aurélien 2023</p>
-        </div>
-        <div class="espace-apres-footer"></div>
+    <div class="container-fluid jauneContactBg">
+        <p class="copyright">© Portfolio Aurélien 2023</p>
+    </div>
+    <div class="espace-apres-footer"></div>
     <!-- end footer -->
 
     <!-- back to top -->
@@ -178,12 +188,12 @@
     <!-- EMAIL JS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      (function () {
-        emailjs.init('lhQhIS3US099VGUbU');
-      })();
+        (function () {
+            emailjs.init('lhQhIS3US099VGUbU');
+        })();
     </script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault(); // Empêche le comportement par défaut du formulaire
 
             // Récupération des valeurs des champs
@@ -205,13 +215,13 @@
 
                 // Si les champs sont remplis, envoi du formulaire
                 emailjs.sendForm('service_e7seyyw', 'template_f6qd1jc', this)
-                    .then(function() {
+                    .then(function () {
                         alert('Email envoyé !');
                         // Réinitialisation des champs après envoi réussi
                         nameField.value = '';
                         emailField.value = '';
                         messageField.value = '';
-                    }, function(error) {
+                    }, function (error) {
                         console.error(error);
                         alert('Echec de l\'envoi du mail');
                         // Restauration des valeurs précédentes en cas d'échec
