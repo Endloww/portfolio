@@ -2594,3 +2594,77 @@ textarea:focus {
 .table-title {
     color: rgb(206, 110, 27);
 }
+
+#pdf-thumbnail {
+    position: relative;
+    max-width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-left: 75px;
+}
+
+#pdf-overlay {
+    position: absolute;
+    top: 50%;
+    margin-left: 575px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#pdf-thumbnail:hover #pdf-overlay {
+    opacity: 1;
+}
+
+#pdf-thumbnail img {
+    width: 1000px;
+}
+
+#pdf-thumbnail:hover img {
+    filter: brightness(70%);
+}
+
+#pdf-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#pdf-modal-content {
+    width: 70%;
+    height: 70%;
+
+}
+
+#pdf-modal iframe {
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: flex;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
