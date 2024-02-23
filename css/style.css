@@ -1967,12 +1967,13 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
-    font-size: 35px;
+    font-size: 45px;
     /* Taille de la police initiale */
 }
 
 .box-primary-nav .whatsapp:hover {
     font-size: 50px;
+    cursor: pointer;
     /* Taille de la police agrandie */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
 }
@@ -1982,14 +1983,15 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 35px;
+    font-size: 40px;
     /* Taille de la police initiale */
 }
 
 .whatsapp:hover {
-    font-size: 40px;
+    font-size: 45px;
     /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .box-primary-nav .instagram {
@@ -2000,7 +2002,7 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
-    font-size: 35px;
+    font-size: 45px;
     /* Taille de la police initiale */
 }
 
@@ -2008,6 +2010,7 @@ textarea:focus {
     font-size: 50px;
     /* Taille de la police agrandie */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .instagram {
@@ -2018,14 +2021,15 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-    font-size: 35px;
+    font-size: 40px;
     /* Taille de la police initiale */
 }
 
 .instagram:hover {
-    font-size: 40px;
+    font-size: 45px;
     /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .box-primary-nav .linkedin {
@@ -2033,15 +2037,16 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
-    font-size: 35px;
+    font-size: 45px;
     /* Taille de la police initiale */
 }
 
 /* Au survol, augmenter la taille de la police */
 .box-primary-nav .linkedin:hover {
-    font-size: 45px;
+    font-size: 50px;
     /* Taille de la police agrandie */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .linkedin {
@@ -2049,45 +2054,48 @@ textarea:focus {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 35px;
+    font-size: 40px;
     /* Taille de la police initiale */
 }
 
 /* Au survol, augmenter la taille de la police */
 .linkedin:hover {
-    font-size: 40px;
+    font-size: 45px;
     /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .box-primary-nav .github {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
-    font-size: 35px;
+    font-size: 45px;
     /* Taille de la police initiale */
 }
 
 .box-primary-nav .github:hover {
-    font-size: 45px;
+    font-size: 50px;
     /* Taille de la police agrandie */
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .github {
     transition: font-size 0.2s ease-in-out;
     /* Transition pour la taille de la police */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 35px;
+    font-size: 40px;
     /* Taille de la police initiale */
     color: #131313;
 }
 
 .github:hover {
-    font-size: 40px;
+    font-size: 45px;
     /* Taille de la police agrandie */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     color: #131313;
+    cursor: pointer;
 }
 
 .cv-present {
