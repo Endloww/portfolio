@@ -874,8 +874,8 @@ b i:last-child {
     color: #60606e;
     padding: 0 10px;
     margin: 0 10px;
-    -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;
+    -webkit-transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in-out .1s;
 }
 
 .portfolio .categories-grid .categories ul li a:hover,
@@ -886,7 +886,7 @@ b i:last-child {
     padding: 0px 20px;
     border-radius: 25px;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
 }
 
 .portfolio .categories-grid .categories ul li a.active {
@@ -985,9 +985,10 @@ b i:last-child {
 }
 
 .portfolio .categories-grid .categories ul li a {
+    cursor: pointer;
     padding: 0 10px;
-    -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;
+    -webkit-transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in-out .1s;
 }
 
 .portfolio_filter {
@@ -1015,6 +1016,13 @@ b i:last-child {
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
     background: url(../img/projBg.png);
+}
+
+.resizetabcomp {
+    height: 500px;
+    width: 100%;
+    border: #363636 solid 3px;
+    align-items: center;
 }
 
 .copyright {
