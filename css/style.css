@@ -991,6 +991,34 @@ b i:last-child {
     transition: all .1s ease-in-out .1s;
 }
 
+.contact-cv {
+    width: 18% !important;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 40%;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+    background-color: #8647a3a5 !important;
+}
+
+.cv-cv {
+    width: 20%;
+    padding: 5px;
+    margin-top: -60px;
+    margin-left: 40%;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+    background-color: #8647a3a5 !important;
+}
+
+.etude-cv {
+    height: 500px;
+}
+
+
 .portfolio_filter {
     padding-left: 0;
     display: inline-block;
@@ -2112,11 +2140,11 @@ textarea:focus {
     border-radius: 20px;
     margin-bottom: 15px;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .cv-present:hover {
-    transform: scale(0.95);
+    transform: scale(0.98);
     /* Zoom au survol à 120% de la taille d'origine */
 }
 
