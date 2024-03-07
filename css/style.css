@@ -1793,6 +1793,7 @@ textarea:focus {
     transition: transform 0.3s ease;
 }
 
+
 .title-p-vert {
     display: inline-block;
     background: url(../img/awocBg.png);
@@ -1819,6 +1820,15 @@ textarea:focus {
 
 .hr-vert {
     border-color: #36b06d;
+    border-width: 1px;
+    width: 98%;
+    border-radius: 10px;
+    margin-top: -80px;
+    margin-bottom: -80px;
+}
+
+.hr-bleu {
+    border-color: #3674A0;
     border-width: 1px;
     width: 98%;
     border-radius: 10px;
@@ -1904,6 +1914,44 @@ textarea:focus {
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 25px;
+}
+
+.animate-bleu-p {
+    background-image: linear-gradient(-225deg,
+            #3674A0 0%,
+            #0a4975 29%,
+            rgb(42, 131, 214) 100%,
+            rgb(37, 141, 201) 67%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.animate-bleu-p:hover {
+    transform: scale(1.03);
+    /* Zoom au survol à 120% de la taille d'origine */
+    cursor: default;
+}
+
+.title-p-bleu {
+    display: inline-block;
+    background: url(../img/gsbBg.png);
+    box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.5);
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-size: contain;
+
 }
 
 .defaulth4 {
