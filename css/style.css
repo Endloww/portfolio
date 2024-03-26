@@ -989,6 +989,7 @@ b i:last-child {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 8px 8px 6px 0 rgba(117, 117, 117, 0.5);
   }
   
   .card span {
@@ -1044,7 +1045,7 @@ b i:last-child {
     transition: .4s ease-in-out;
   }
   .card:hover {
-    transform: translateZ(10px) rotateX(15deg) rotateY(15deg);
+    transform: translateZ(-10px) rotateX(15deg) rotateY(15deg);
     cursor: pointer;
   }
   .card {
