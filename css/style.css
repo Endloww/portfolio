@@ -983,7 +983,8 @@ b i:last-child {
 .card {
     width: 17em;
     height: 22.5em;
-    background: #171717;
+    background: url(../img/cardRed.png);
+    background-size: cover;
     transition: 1s ease-in-out;
     border-radius: 20px;
     display: flex;
