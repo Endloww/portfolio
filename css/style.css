@@ -990,6 +990,7 @@ b i:last-child {
     display: flex;
     flex-direction: column;
     box-shadow: 8px 8px 6px 0 rgba(117, 117, 117, 0.5);
+    text-decoration: none;
   }
   
   .card span {
@@ -1027,6 +1028,10 @@ b i:last-child {
   .card a {
     color: white;
     transition: .4s ease-in-out;
+    text-decoration: none;
+  }
+  .card a:hover {
+    text-decoration: none;
   }
   
   .card a:hover {
