@@ -30,11 +30,27 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJCHKK368X"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-JJCHKK368X');
+    gtag('config', 'G-JJCHKK368X');
+</script>
+<!-- pop-up télécharger CV -->
+<script>
+    function confirmDownload(filename) {
+        if (confirm("Êtes-vous sûr de vouloir télécharger le CV ?")) {
+            // Si l'utilisateur confirme, déclencher le téléchargement du fichier
+            var link = document.createElement('a');
+            link.href = filename;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            // Si l'utilisateur annule, ne rien faire
+        }
+    }
 </script>
 
 <body class="index">
@@ -62,10 +78,10 @@
                         <img src="img/magic.png" alt="Baguette magique">
                     </button>
                     <button id="increaseButton" class="size-adjust-button">
-                        <img src="img/+.png" alt="+">
+                        <img src="img/+.webp" alt="+">
                     </button>
                     <button id="decreaseButton" class="size-adjust-button">
-                        <img src="img/-.png" alt="-">
+                        <img src="img/-.webp" alt="-">
                     </button>
                     <input type="color" id="colorPicker" value="#b03be6" class="select-color">
                 </div>
@@ -118,8 +134,8 @@
 
     <!-- main-container -->
     <div class="container main-container">
-        <a href="cvAurelien.pdf" download="cvAurelien.pdf">
-            <div class="col-md-12 cv-present spaced-plus cv-cv">
+        <a href="#" id="download-link">
+            <div class="col-md-12 cv-present spaced-plus cv-cv" onclick="confirmDownload('cvAurelien.pdf')">
                 <h3>Télécharger CV</h3>
             </div>
         </a>
