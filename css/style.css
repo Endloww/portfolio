@@ -983,7 +983,7 @@ b i:last-child {
 .card {
     width: 17em;
     height: 22.5em;
-    background: url(../img/cardRed.png);
+    background: url(../img/cardRed.webp);
     background-size: cover;
     transition: 1s ease-in-out;
     border-radius: 20px;
@@ -1132,7 +1132,7 @@ b i:last-child {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/projBg.png);
+    background: url(../img/projBg.webp);
 }
 
 .resizetabcomp {
@@ -1169,7 +1169,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/gsbBg.png);
+    background: url(../img/gsbBg.webp);
 }
 
 .vertBg {
@@ -1189,7 +1189,27 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/mgBg.png);
+    background: url(../img/mgBg.webp);
+}
+
+.endimaBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    background: url(../img/endimaBg.webp);
+}
+
+.gsbVisiteTBg {
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    background: url(../img/gsbVisiteTBg.webp);
 }
 
 .jauneContactBg {
@@ -1199,7 +1219,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/contactBg.png);
+    background: url(../img/contactBg.webp);
 }
 
 .tabCompBg {
@@ -1209,7 +1229,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/tabCompBg.png);
+    background: url(../img/tabCompBg.webp);
 }
 
 .rougeBg {
@@ -1219,7 +1239,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/certifBg.png);
+    background: url(../img/certifBg.webp);
 }
 
 .violetBg {
@@ -1229,7 +1249,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/itilBg.png);
+    background: url(../img/itilBg.webp);
 }
 
 .vtBg {
@@ -1239,7 +1259,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/vtBg.png);
+    background: url(../img/vtBg.webp);
 }
 
 .bleuclairBg {
@@ -1249,7 +1269,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/parcoursBg.png);
+    background: url(../img/parcoursBg.webp);
 }
 
 .vertclairBg {
@@ -1259,7 +1279,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/competenceBg.png);
+    background: url(../img/competenceBg.webp);
 }
 
 .noirBg {
@@ -1269,7 +1289,7 @@ footer img {
     margin-bottom: 10px;
     box-shadow: 10px -10px 15px 0 rgba(0, 0, 0, 0.5);
     border-radius: 35px;
-    background: url(../img/projBg.png);
+    background: url(../img/projBg.webp);
 }
 
 /* end bgColors
@@ -1352,7 +1372,27 @@ footer img {
 
 .bar-mg {
     color: #333;
-    background: url(../img/mgBg.png);
+    background: url(../img/mgBg.webp);
+    padding: 150px 0 150px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+
+.bar-endima {
+    color: #333;
+    background: url(../img/endimaBg.webp);
+    padding: 150px 0 150px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+
+.bar-gsbVisiteT {
+    color: #333;
+    background: url(../img/gsbVisiteTBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1362,7 +1402,7 @@ footer img {
 
 .bar-parc {
     color: #333;
-    background: url(../img/parcoursBg.png);
+    background: url(../img/parcoursBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1372,7 +1412,7 @@ footer img {
 
 .bar-comp {
     color: #333;
-    background: url(../img/competenceBg.png);
+    background: url(../img/competenceBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1382,7 +1422,7 @@ footer img {
 
 .bar-contact {
     color: #333;
-    background: url(../img/contactBg.png);
+    background: url(../img/contactBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1392,7 +1432,7 @@ footer img {
 
 .bar-vt {
     color: #333;
-    background: url(../img/vtBg.png);
+    background: url(../img/vtBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1402,7 +1442,7 @@ footer img {
 
 .bar-orange {
     color: #333;
-    background: url(../img/tabCompBg.png);
+    background: url(../img/tabCompBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1412,7 +1452,7 @@ footer img {
 
 .bar-cv {
     color: #333;
-    background: url(../img/cvBg.png);
+    background: url(../img/cvBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1422,7 +1462,7 @@ footer img {
 
 .bar-certif {
     color: #333;
-    background: url(../img/certifBg.png);
+    background: url(../img/certifBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1432,7 +1472,7 @@ footer img {
 
 .bar-projet {
     color: #333;
-    background: url(../img/projBg.png);
+    background: url(../img/projBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1442,7 +1482,7 @@ footer img {
 
 .bar-itil {
     color: #333;
-    background: url(../img/itilBg.png);
+    background: url(../img/itilBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1452,7 +1492,7 @@ footer img {
 
 .bar-GSB {
     color: #333;
-    background: url(../img/gsbBg.png);
+    background: url(../img/gsbBg.webp);
     padding: 150px 0 150px;
     background-size: cover;
     background-attachment: fixed;
@@ -1800,32 +1840,7 @@ textarea:focus {
     }
 }
 
-.animate-character {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #6525a0 0%,
-            #bc3ee2 29%,
-            rgb(119, 55, 138) 100%,
-            rgb(176, 59, 230) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.animate-vert {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #348357 0%,
-            #358E5D 29%,
-            rgb(55, 190, 100) 100%,
-            rgb(38, 124, 67) 67%);
+.animate {
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -1838,21 +1853,28 @@ textarea:focus {
     font-size: 25px;
 }
 
+.animate-character {
+    background-image: linear-gradient(-225deg,
+            #6525a0 0%,
+            #bc3ee2 29%,
+            rgb(119, 55, 138) 100%,
+            rgb(176, 59, 230) 67%);
+}
+
+.animate-vert {
+    background-image: linear-gradient(-225deg,
+            #348357 0%,
+            #358E5D 29%,
+            rgb(55, 190, 100) 100%,
+            rgb(38, 124, 67) 67%);
+}
+
 .animate-vert-p {
     background-image: linear-gradient(-225deg,
             #36b06d 0%,
             #358E5D 29%,
             rgb(55, 190, 100) 100%,
             rgb(39, 183, 87) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 16px;
     transition: transform 0.3s ease;
 }
@@ -1869,15 +1891,6 @@ textarea:focus {
             #358E5D 29%,
             rgb(55, 190, 100) 100%,
             rgb(39, 183, 87) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     border: 15px;
     transition: transform 0.3s ease;
 }
@@ -1899,6 +1912,7 @@ textarea:focus {
 .h-o {
     margin-top: -40px;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .title-text-p {
@@ -1930,78 +1944,56 @@ textarea:focus {
 }
 
 .animate-jaune {
-    text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #BDAF0D 0%,
             #e7d61d 29%,
             rgb(190, 185, 55) 100%,
             rgb(164, 177, 20) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
+    font-size: 25px;
+}
+
+.animate-endima {
+    background-image: linear-gradient(-225deg,
+            #8a2c82 0%,
+            #ce31c1 29%,
+            rgb(160, 56, 151) 100%,
+            rgb(177, 20, 135) 67%);
+    font-size: 25px;
+}
+
+.animate-gsbVisite {
+    background-image: linear-gradient(-225deg,
+            #32859a 0%,
+            #37A4BF 29%,
+            rgb(56, 129, 160) 100%,
+            rgb(20, 122, 177) 67%);
     font-size: 25px;
 }
 
 .animate-rouge {
-    text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #983248 0%,
             #eb1342 29%,
             rgb(148, 32, 32) 100%,
             rgb(177, 20, 20) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 25px;
 }
 
 .animate-orange {
-    text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #B45517 0%,
             #f67b29 29%,
             rgb(161, 68, 15) 100%,
             rgb(193, 79, 14) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 25px;
 }
 
 .animate-bleu {
-    text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #3674A0 0%,
             #0a4975 29%,
             rgb(42, 131, 214) 100%,
             rgb(37, 141, 201) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 25px;
 }
 
@@ -2011,15 +2003,6 @@ textarea:focus {
             #0a4975 29%,
             rgb(42, 131, 214) 100%,
             rgb(37, 141, 201) 67%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 16px;
     transition: transform 0.3s ease;
 }
@@ -2032,7 +2015,7 @@ textarea:focus {
 
 .title-p-bleu {
     display: inline-block;
-    background: url(../img/gsbBg.png);
+    background: url(../img/gsbBg.webp);
     box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.5);
     padding-right: 15px;
     padding-left: 15px;
