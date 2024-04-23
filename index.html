@@ -62,6 +62,20 @@
     gtag('config', 'G-JJCHKK368X');
 </script>
 
+<script>
+    function checkPassword() {
+        var secretCode = "lampadaire";
+        var userCode = prompt("(si vous avez rien à voir cherchez pas à rentrer le code) et pourquoi vous cliquez sur un mot comme ça déjà même. \nEntre le code secret : ");
+
+        if (userCode === secretCode) {
+            localStorage.setItem('accessGranted', 'true');
+            window.location.href = "lalaland.html";
+        } else {
+            alert("Incorrect. Essaye encore. (Indice : ➡️ __________ ⬅️ jaune fluo )");
+        }
+    }
+</script>
+
 <style>
     ::selection {
         background-color: #97599785 !important;
@@ -101,6 +115,8 @@
                     <button id="decreaseButton" class="size-adjust-button">
                         <img src="img/-.webp" alt="-">
                     </button>
+
+
                     <input type="color" id="colorPicker" value="#b03be6" class="select-color">
                 </div>
             </div>
@@ -157,10 +173,9 @@
                             <b>&nbsp;Blanchet.</b>
                         </span>
                     </h1>
-                    <h5 class="animate animate-character">"L'informatique forge l'avenir au travers d'une symbiose entre
-                        logique
-                        et créativité."</h5>
-                    <h5 class="animate animate-character">- Blanchet</h5>
+                    <h5 class="animate animate-character">"People <a class="animate animate-jaune"
+                            onclick="checkPassword()">Love</a>
+                        What Other People Are Passionate About."</h5>
                 </div>
             </div>
 
