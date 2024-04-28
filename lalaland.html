@@ -22,12 +22,6 @@
     <script src="js/mouse.js"></script>
 </head>
 
-<script>
-    if (localStorage.getItem('accessGranted') !== 'true') {
-        window.location.href = "index.html"; // replace with the path to your password page
-    }
-</script>
-
 <body class="contact">
     <!-- Une souris verte, qui courait dans l'herbe... -->
     <canvas id="mouse-trail"></canvas>
@@ -42,26 +36,7 @@
         </div>
     </div>
     <!-- end Preloader -->
-    <script>
-        TweenLite.defaultEase = Linear.easeNone;
-        const time = 3;
-        const d = 0.2;
-        const master = new TimelineMax({ repeat: -1, yoyo: true, paused: true });
 
-        TweenMax.set(".flower, .leftleaf, .rightleaf", { transformOrigin: "center bottom" });
-
-        for (i = 1; i < 5; i++) {
-            tl = new TimelineMax();
-            tl.to("#tulip" + i + " .flower", time, { rotation: -20 }, 0);
-            tl.to("#tulip" + i + " .leftleaf", time, { rotation: 5 }, 0);
-            tl.to("#tulip" + i + " .rightleaf", time, { rotation: 5 }, 0);
-            tl.to(".stemStart" + i, time, { morphSVG: ".stemEnd" + i }, 0);
-            master.add(tl, (i - 1) * d);
-        }
-
-        master.play();
-
-    </script>
     <style>
         .three-body {
             --uib-color: #d8cd38c4;
@@ -105,6 +80,21 @@
             width: 100%;
             z-index: 1;
         }
+
+        /* Ajoutez ce style pour que la vidéo remplisse tout le fond */
+        #backgroundVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .testButton {
+            border-radius: 20px;
+        }
     </style>
 
     <div class="container-fluid">
@@ -116,6 +106,7 @@
                     <button id="toggleButton" class="round-button">
                         <img src="img/magic.webp" alt="Baguette magique">
                     </button>
+                    <button id="testButton" class="round-button"><img src="img/lampadaire.webp" alt="+"></button>
                     <button id="increaseButton" class="size-adjust-button">
                         <img src="img/+.webp" alt="+">
                     </button>
@@ -136,15 +127,17 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
-    <div class='intro'>
+    <div class="intro">
+        <!-- La vidéo en arrière-plan (initialement cachée) -->
+        <video id="backgroundVideo" autoplay loop style="display: none;">
+            <source src="MiaAndSeb.mp4" type="video/mp4">
+            <!-- Ajoutez ici d'autres sources pour la compatibilité avec différents navigateurs -->
+        </video>
         <figure class="tulips">
             <p>here's to the fools who dream</p>
             <p>ialy</p>
-
         </figure>
     </div>
-
-
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
@@ -157,6 +150,35 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const testButton = document.getElementById("testButton");
+            const backgroundVideo = document.getElementById("backgroundVideo");
+            const spotifyIframe = document.querySelector("iframe");
+
+            testButton.addEventListener("click", function () {
+                // Vérifie si la vidéo est déjà affichée
+                if (backgroundVideo.style.display === "none" || backgroundVideo.style.display === "") {
+                    // Affiche la vidéo
+                    backgroundVideo.style.display = "block";
+                    // Démarrer la lecture de la vidéo en arrière-plan
+                    backgroundVideo.play();
+                    // Masquer l'iframe Spotify
+                    spotifyIframe.style.display = "none";
+                    // Réglez le volume de la vidéo en arrière-plan à 0.5 (50%)
+                    backgroundVideo.volume = 0.3;
+                } else {
+                    // Cache la vidéo
+                    backgroundVideo.style.display = "none";
+                    // Mettre en pause la vidéo
+                    backgroundVideo.pause();
+                    // Afficher l'iframe Spotify
+                    spotifyIframe.style.display = "block";
+                }
+            });
+        });
+    </script>
 
 </body>
 
